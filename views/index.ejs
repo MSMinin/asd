@@ -1,0 +1,14 @@
+<%console.log("username : ", username)%>
+
+<h1>안냥하세요</h1>
+
+
+<%if(username) { %>
+    <%=username%>님 어서오세요. <br>
+    <a href="/test/informationChk/<%=username%>">회원 정보 보기</a> <br>
+    <a href="/test/logout">로그아웃</a><br>
+<%}else {%>
+    이곳을 이제 기본페이지 겸용, 현재 로그인이동하게 만들것이다.<br>
+    <a href="/test/loginForm">로그인창으로 </a><br>
+<%}%>
+
